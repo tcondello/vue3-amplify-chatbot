@@ -1,0 +1,19 @@
+{
+    "identityPoolName": "vue3amplifychatbot_identitypool_6dbbbe59",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "cognito6dbbbe59",
+    "sharedId": "6dbbbe59",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    }
+}
